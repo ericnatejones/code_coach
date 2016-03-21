@@ -15,5 +15,3 @@ $("#to-top").click(function() {
         scrollTop: $("#page-one").offset().top
     }, 200);
 });
-
-$('#about-accordian').liteAccordion();
