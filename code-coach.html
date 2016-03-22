@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Code Coach</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<link rel="stylesheet" href="css/liteAccordion.css">
-<link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="utf-8">
+  <title>Code Coach</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/accordion.css">
 
-  </head>
+</head>
 <body>
   <div id="page-one" class='page'>
     <div class='container-fluid'>
@@ -38,10 +38,18 @@
             <div class='col-xs-4'>
               <div class='row'>
                 <div class='no-padding col-xs-12 col-md-6'>
-                  <button id='learn-more' type="button" class="col-xs-12 col-md-6 button btn btn-success btn-lg">how?</button>
+                  <button id='learn-more'
+                          type="button"
+                          class="col-xs-12 col-md-6 button btn btn-success btn-lg">
+                            how?
+                  </button>
                 </div>
                 <div class='no-padding col-xs-12 col-md-6'>
-                  <button id='contact-me' type="button" class="button btn btn-primary btn-lg">contact me</button>
+                  <button id='contact-me'
+                          type="button"
+                          class="button btn btn-primary btn-lg">
+                            contact me
+                  </button>
                 </div>
 
               </div>
@@ -56,32 +64,61 @@
     <div class='container-fluid'>
       <div class="row">
         <div class='fill col-xs-12'></div>
-        <div id='about-accordian' class='fill col-xs-12'>
-          <ol>
-              <li>
-                  <h2><span>a better way to learn code</span></h2>
-                  <div></div>
-              </li>
-              <li>
-                  <h2><span>a personalized rigorous pace</span></h2>
-                  <div></div>
-              </li>
-              <li>
-                  <h2><span>structured freedom</span></h2>
-                  <div></div>
-              </li>
-              <li>
-                  <h2><span>valuable learning at half the price</span></h2>
-                  <div></div>
-              </li>
-              <li>
-                  <h2><span>no commitment</span></h2>
-                  <div></div>
-              </li>
-          </ol>
-          <noscript>
-              <p>Please enable JavaScript to get the full experience.</p>
-          </noscript>
+
+        <div id='about-accordion' class='col-xs-12'>
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+               <h4 class="panel-title">
+                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                   one on one time
+                 </a>
+               </h4>
+
+               </div>
+                 <div id="collapseOne" class="panel-collapse collapse in">
+                   <div class="panel-body">
+                     You get an experienced coder who is dedicated to you.
+                     They will be able to help you learn hard topics,
+                     work through bugs, and personalize your learning.
+                   </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      Learning to code means fiddling.
+                    </a>
+                </h4>
+
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Bootcamps are good for three things.
+                  1) You're locked in somewhere for 8 hours a day.
+                  2) You've got money invested and the stress and pressure of making sure it's worth it.
+                  and 3) You have someone to get you through hard bugs and concepts.
+                  We might not be able to help you with number 1 and 2 as much, but number 3 is our specialty.
+                  You may ask, "What about teaching code?" Online tutorials are actually much
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    Volvo
+                  </a>
+                </h4>
+
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
         <div class='fill col-xs-12'></div>
@@ -92,12 +129,19 @@
             <div class='col-md-2 col-xs-4'>
               <div class='row'>
                 <div class='no-padding col-xs-12'>
-                  <button id='to-team' type="button" class="col-xs-12 button btn btn-success btn-lg">meet the team</button>
+                  <button id='to-team'
+                    type="button"
+                    class="col-xs-12 button btn btn-success btn-lg">
+                      meet the team
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+
       </div>
     </div>
   </div>
@@ -111,7 +155,11 @@
             <div class='col-md-2 col-xs-4'>
               <div class='row'>
                 <div class='no-padding col-xs-12'>
-                  <button id='to-top' type="button" class="col-xs-12 button btn btn-danger btn-lg">to top</button>
+                  <button id='to-top'
+                          type="button"
+                          class="col-xs-12 button btn btn-danger btn-lg">
+                            to top
+                  </button>
                 </div>
               </div>
             </div>
@@ -121,8 +169,10 @@
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-  <script src="js/liteaccordion.jquery.js"></script>
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+          integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+          crossorigin="anonymous">
+  </script>
   <script src="js/app.js"></script>
 
 </body>
